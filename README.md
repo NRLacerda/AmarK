@@ -1,11 +1,11 @@
 <h1> Markent</h1>
 Projeto de um site de um mercado fictício
-1- Com disposição de itens por componente
-2- Adicionar itens no carrinho[DEV]
-3- Criação de conta simples[DEV]
+1- Com disposição de itens por componente<br>
+2- Adicionar itens no carrinho[DEV]<br>
+3- Criação de conta simples[DEV]<br>
 
 *
-[DEV]= Em desenvolvimento
+[DEV]= Em desenvolvimento<br>
 
 Esse projeto foi feito com [Angular CLI](https://github.com/angular/angular-cli) version 14.2.1.
 
