@@ -3,3 +3,10 @@
     
 html, body { height: 100%; background-color: rgb(255, 239, 217); }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+a{
+    color: inherit;
+    text-decoration: inherit;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

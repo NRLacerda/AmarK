@@ -9,6 +9,8 @@ import { productCardComponent } from './project-card/productCard.component';
 import { productCardservice } from './project-card/productCard.service';
 import { product } from './project-card/product';
 import { NavComponent } from './nav/nav.component';
+import { CartComponent } from './cart/cart.component';
+import {Component} from '@angular/core';
 
 
 @NgModule({
@@ -17,6 +19,7 @@ import { NavComponent } from './nav/nav.component';
     AppComponent,
     productCardComponent,
     NavComponent,
+    CartComponent,
   ],
   imports: [
     BrowserModule,
