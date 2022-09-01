@@ -6,12 +6,13 @@
       <mat-card-subtitle>Games/Boardgames</mat-card-subtitle>
     </mat-card-header>-->
     <a id="link" href="https://github.com/Desonrados/PokerMon">
-    <img mat-card-image src="https://ingavinhos.vtexassets.com/arquivos/ids/160539/Vinho-Quinta-do-Morgado-Bordo-Tinto-Seco-1-L.png?v=637879680788600000" alt="productImage">
+    <img mat-card-image class="product" src="https://ingavinhos.vtexassets.com/arquivos/ids/160539/Vinho-Quinta-do-Morgado-Bordo-Tinto-Seco-1-L.png?v=637879680788600000" alt="productImage">
     </a>
     <mat-card-content>
-      <p id="productName">
-          {{productName}}
-      </p>
+      <p *ngFor="let productName of productNames">{{productName}}</p>
+      <!--<p id="productName">
+            {{productName}}
+      </p>-->
       <p>
         {{productBrand}}
       </p>

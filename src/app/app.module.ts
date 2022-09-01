@@ -7,6 +7,8 @@ import { MatSliderModule } from '@angular/material/slider';
 import {MatCardModule} from '@angular/material/card';
 import { productCardComponent } from './project-card/productCard.component'; 
 import { productCardservice } from './project-card/productCard.service';
+import { product } from './project-card/product';
+import { NavComponent } from './nav/nav.component';
 
 
 @NgModule({
@@ -14,6 +16,7 @@ import { productCardservice } from './project-card/productCard.service';
   declarations: [
     AppComponent,
     productCardComponent,
+    NavComponent,
   ],
   imports: [
     BrowserModule,

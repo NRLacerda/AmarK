@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { AnyCatcher } from 'rxjs/internal/AnyCatcher';
 
 import { productCardservice } from './productCard.service';
+import { product } from './product'; // importa a tipificação do produto
+// importa o serviço que pega os dados
 
 @Component({
   selector: 'app-productCard',
@@ -8,16 +11,19 @@ import { productCardservice } from './productCard.service';
   styleUrls: ['./productCard.component.css']
 })
 export class productCardComponent implements OnInit {
-  productName:any
-  productBrand:any
-  productValue:any
-  productWeight:any
+  // forma de colocar varios tipos em uma variavel
+  // product[] = []; (ele vai puxar as variaveis dessa classe)
+  productBrand:string="Quinta do Morgado"
+  productValue:string= "$19,22"
+  productWeight:string="0,75lt"
+  productNames:string[]
   constructor(private productCardservice: productCardservice) { 
-    this.productName=productCardservice.getProduct();
+      this.productNames=productCardservice.getProducts();
+    // declara a variavel sendo igual a uma função do serviço
   }
   ngOnInit(): void {
   }
   addCart(){
-    
+    // this.productName
   }
 }

@@ -1,0 +1,19 @@
+.nav{
+    display: flex;
+    align-items: center;
+    background-color: rgb(11, 96, 0);
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left:15px;
+    width: 100vw;
+}
+.useraccount{
+    display: flex;
+    justify-content: end;
+}
+.teste{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}

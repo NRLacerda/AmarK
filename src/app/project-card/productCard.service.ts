@@ -5,10 +5,9 @@ import { Injectable } from "@angular/core";
 export class productCardservice{
 
     constructor(){}
-    getProduct(){
-        return ['Pasmados Regional Península de Setúbal Vinho Tinto',
-        'Queijo Mussarela Fatiado Tirolez Kg','Queijo Camembert Ile De France 125g']
+    getProducts(){
+        return ['Vinho Tinto Seco de Mesa'
+   //     'QUEIJO','QUEIJO FRANCÊS']
+    ]
     }
-
-
 }
