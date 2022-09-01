@@ -23,11 +23,12 @@ export class productCardComponent implements OnInit {
   }
   ngOnInit(): void {
   }
+  // Adiciona item clickado ao carrinho de compras
   addCart(){
     let Cart:any = [] 
+    let amount:number= 0
+    let amountItem:number = amount + 1
     Cart.push(this.productNames)
-    window.alert('Produto Adicionado ao Carrinho! ' + Cart)
-    
-    // this.productName
+    window.alert('Produto Adicionado ao Carrinho! ' + Cart +'Quantidade ' + amountItem)
   }
 }
