@@ -14,7 +14,7 @@ export class productCardComponent implements OnInit {
   // forma de colocar varios tipos em uma variavel
   // product[] = []; (ele vai puxar as variaveis dessa classe)
   productBrand:string="Quinta do Morgado"
-  productValue:string= "$19,22"
+  productValue:any= "€19,22"
   productWeight:string="0,75lt"
   productNames:string[]
   constructor(private productCardservice: productCardservice) { 

@@ -27,8 +27,20 @@ float: right;
     border-radius: 40px;
     border: 3px solid rgb(145, 0, 0);
 }
-.product:hover{
-    transform: scale(1.05, 1.05);
+.buyButton:hover{
+    background-color: rgb(11, 96, 0);
     transition: 1s;
     transition-timing-function: cubic-bezier(.53,-0.04,0,1.03);
+}
+.product:hover{
+    transform: scale(1.05, 1.05);
+    transition: 0.5s;
+    transition-timing-function: cubic-bezier(.53,-0.04,0,1.03);
+}
+.productValue{
+    color: red;
+    font-size: 1.5em;
+}
+.productName{
+    font-size: 1.3em;
 }
