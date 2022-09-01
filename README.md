@@ -1,5 +1,5 @@
 <h1> Markent</h1>
-Projeto de um site de um mercado fictício
+Projeto de um site de um mercado fictício<br>
 1- Com disposição de itens por componente<br>
 2- Adicionar itens no carrinho[DEV]<br>
 3- Criação de conta simples[DEV]<br>
