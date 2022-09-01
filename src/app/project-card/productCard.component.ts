@@ -24,6 +24,10 @@ export class productCardComponent implements OnInit {
   ngOnInit(): void {
   }
   addCart(){
+    let Cart:any = [] 
+    Cart.push(this.productNames)
+    window.alert('Produto Adicionado ao Carrinho! ' + Cart)
+    
     // this.productName
   }
 }
