@@ -6,6 +6,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatSliderModule } from '@angular/material/slider';
 import {MatCardModule} from '@angular/material/card';
 import { productCardComponent } from './project-card/productCard.component'; 
+import { productCardservice } from './project-card/productCard.service';
 
 
 @NgModule({
@@ -20,7 +21,7 @@ import { productCardComponent } from './project-card/productCard.component';
     MatSliderModule,
     MatCardModule,
   ],
-  providers: [],
+  providers: [productCardservice],
   bootstrap: [AppComponent]
   
 })
