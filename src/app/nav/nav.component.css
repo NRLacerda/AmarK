@@ -23,7 +23,7 @@
     float: right;
     align-items: center;
     display: inline;
-    margin-right: 3vw;
+    margin-right: 1vw;
     margin-left: 1vw;
     margin-bottom: 10px;
 }
@@ -36,3 +36,11 @@
     transform: scale(1.5);
     margin-bottom: 15px;
 }
+.searchIcon{
+    margin-right: 5vw;
+    transform: scale(1.5);
+    margin-bottom: 15px;
+}
+.example-spacer {
+    flex: 1 1 auto;
+  }

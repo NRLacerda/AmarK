@@ -11,6 +11,8 @@ import { product } from './project-card/product';
 import { NavComponent } from './nav/nav.component';
 import { CartComponent } from './cart/cart.component';
 import {Component} from '@angular/core';
+import {MatToolbarModule} from '@angular/material/toolbar'; 
+import {MatIconModule} from '@angular/material/icon'; 
 
 
 @NgModule({
@@ -26,6 +28,8 @@ import {Component} from '@angular/core';
     BrowserAnimationsModule,
     MatSliderModule,
     MatCardModule,
+    MatToolbarModule,
+    MatIconModule
   ],
   providers: [productCardservice],
   bootstrap: [AppComponent]
