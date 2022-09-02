@@ -1,7 +1,4 @@
-.useraccount{
-    display: flex;
-    justify-content: end;
-}
+
 .teste{
     display: flex;
     justify-content: end;
@@ -20,7 +17,7 @@
     height: 2vw;
 }
 #pesquisar{
-    font-size: 1.3em;
+    font-size: 1.2em;
 }
 .searchPart{
     float: right;
@@ -28,6 +25,7 @@
     display: inline;
     margin-right: 3vw;
     margin-left: 1vw;
+    margin-bottom: 10px;
 }
 .conteinerSearch{
     display: flex;
@@ -35,4 +33,6 @@
     align-items: center;
 }
 .logo{
+    transform: scale(1.5);
+    margin-bottom: 15px;
 }
