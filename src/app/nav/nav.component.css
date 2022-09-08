@@ -32,9 +32,13 @@
     justify-content: end;
     align-items: center;
 }
+.nav{
+    width: 100%;
+}
 .logo{
     transform: scale(1.5);
     margin-bottom: 15px;
+    margin-right: 25px;
 }
 .searchIcon{
     margin-right: 5vw;

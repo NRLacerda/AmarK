@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { AnyCatcher } from 'rxjs/internal/AnyCatcher';
 
-import { productCardservice } from './productCard.service';
-import { product } from './product'; // importa a tipificação do produto
-// importa o serviço que pega os dados
+import { productCardservice } from './productCard.service';// importa o serviço que pega os dados
+import { product } from './product';// importa a tipificação do produto
+import { CartComponent } from '../cart/cart.component'; 
 
 @Component({
   selector: 'app-productCard',
@@ -17,6 +17,7 @@ export class productCardComponent implements OnInit {
   productValue:any= "€19,22"
   productWeight:string="0,75lt"
   productNames:string[]
+  
   constructor(private productCardservice: productCardservice) { 
       this.productNames=productCardservice.getProducts();
     // declara a variavel sendo igual a uma função do serviço
@@ -26,9 +27,11 @@ export class productCardComponent implements OnInit {
   // Adiciona item clickado ao carrinho de compras
   addCart(){
     let Cart:any = [] 
+    //= ["Maça","Queijo suico","Vinho bordo"]
     let amount:number= 0
     let amountItem:number = amount + 1
-    Cart.push(this.productNames)
+    Cart.push(this.productNames) //coloca o item dentro do array Cart
     window.alert('Produto Adicionado ao Carrinho! ' + Cart +'Quantidade ' + amountItem)
+    console.log(Cart + "Quantidade " +  amountItem)
   }
 }
