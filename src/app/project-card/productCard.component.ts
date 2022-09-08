@@ -17,7 +17,7 @@ export class productCardComponent implements OnInit {
   productValue:any= "€19,22"
   productWeight:string="0,75lt"
   productNames:string[]
-  constructor(private productCardservice: productCardservice) { 
+  constructor(public productCardservice: productCardservice) { 
       this.productNames=productCardservice.getProducts();
     // declara a variavel sendo igual a uma função do serviço
   }
