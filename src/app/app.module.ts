@@ -17,7 +17,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { UserComponent } from './shared/user/user.component';
 import { SidenavComponent } from './shared/sidenav/sidenav.component';
 import { LoadingComponent } from './shared/loading/loading.component';
-import { GuardsComponent } from './shared/guards/guards.component'; 
+import { GuardsComponent } from './shared/guards/guards.component';
+import { HomeComponent } from './home/home.component';
+import { LoginComponent } from './login/login.component'; 
+
 
 
 @NgModule({
@@ -31,6 +34,8 @@ import { GuardsComponent } from './shared/guards/guards.component';
     SidenavComponent,
     LoadingComponent,
     GuardsComponent,
+    HomeComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
