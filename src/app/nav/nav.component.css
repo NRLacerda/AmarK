@@ -32,10 +32,17 @@
     justify-content: end;
     align-items: center;
 }
+.nav{
+    width: 100%;
+}
 .logo{
     transform: scale(1.5);
     margin-bottom: 15px;
+<<<<<<< HEAD
     margin-right: 2vw;
+=======
+    margin-right: 25px;
+>>>>>>> 70a987903bfa53399d02c30f3eb07b9e8c4b529d
 }
 .searchIcon{
     margin-right: 5vw;
