@@ -1,4 +1,4 @@
-import { productCardservice } from './../project-card/productCard.service';
+import { productCardservice } from '../../project-card/productCard.service';
 import { Injectable } from '@angular/core';
 
 @Injectable({
