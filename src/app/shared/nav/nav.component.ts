@@ -1,21 +1,41 @@
 import { Component, OnInit } from '@angular/core';
+import {FormControl} from '@angular/forms';
+import { NgModule } from '@angular/core';
 
-import { GetCartService } from './get-cart.service';
+import {Observable} from 'rxjs';
+import {map, startWith} from 'rxjs/operators';
+import {MatFormFieldModule} from '@angular/material/form-field'; 
+
+
+@NgModule.SCHEMAS  ({
+  imports: [
+    MatFormFieldModule
+  ]
+})
 
 @Component({
   selector: 'app-nav',
   templateUrl: './nav.component.html',
   styleUrls: ['./nav.component.css'],
-  providers: [GetCartService]
 })
+
 export class NavComponent implements OnInit {
+  myControl = new FormControl('');
+  options: string[] = ['One', 'Two', 'Three'];
+  filteredOptions: Observable<string[]>;
 
   constructor() {
-    //listCart:any[]
-    //this.listCart= GetCartService.CartList();
-   }
-
-  ngOnInit(): void {
   }
 
+  ngOnInit(){
+    this.filteredOptions = this.myControl.valueChanges.pipe(
+      startWith(''),
+      map(value => this._filter(value || '')),
+    );
+  }
+  private _filter(value: string): string[] {
+    const filterValue = value.toLowerCase();
+
+    return this.options.filter(option => option.toLowerCase().includes(filterValue));
+  }
 }

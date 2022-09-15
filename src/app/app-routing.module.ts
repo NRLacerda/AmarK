@@ -5,7 +5,8 @@ import { productCardComponent } from './project-card/productCard.component';
 import { LoginComponent } from './login/login.component';
 
 // Roteador...bip
-// Rotas que terei de fazer mais tarde
+// Rotas que terei de fazer mais tarde, funcionar no caso
+
 const routes: Routes = [
 	{
 		path: 'home', component: HomeComponent
@@ -14,13 +15,14 @@ const routes: Routes = [
 		path: 'login', component:LoginComponent
 	},
 	{
-		path: 'products/wine', component:productCardComponent
+		path: 'products/', component:productCardComponent
 	},
 ];
 
 @NgModule({
-  declarations: [],
-  imports: [
-  ]
+	imports: [RouterModule.forChild(routes)],
+	exports: [
+		RouterModule
+	]
 })
 export class AppRoutingModule { }
