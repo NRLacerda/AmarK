@@ -14,13 +14,13 @@ export class productCardComponent{
   // forma de colocar varios tipos em uma variavel
   // product[] = []; (ele vai puxar as variaveis dessa classe)
   productBrand:string="Quinta do Morgado"
-  productValue:any= "€19,22"
+  productValue:string= "€19,22"
   productWeight:string="0,75lt"
-  productNames:string[]
+  productNames[] = [];
 
   constructor(private productCardservice: productCardservice) { 
-      this.productNames=productCardservice.getProducts();
-    // declara a variavel sendo igual a uma função do serviço
+      this.productNames=productCardservice.getProducts().subscribe((product)=>(this.productNames = product));
+    // declara product name como o GET, numa função assíncrona
   }
   ngOnInit(): void {
   }

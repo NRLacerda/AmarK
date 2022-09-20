@@ -6,13 +6,6 @@ import {Observable} from 'rxjs';
 import {map, startWith} from 'rxjs/operators';
 import {MatFormFieldModule} from '@angular/material/form-field'; 
 
-
-@NgModule.SCHEMAS  ({
-  imports: [
-    MatFormFieldModule
-  ]
-})
-
 @Component({
   selector: 'app-nav',
   templateUrl: './nav.component.html',

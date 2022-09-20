@@ -1,12 +1,16 @@
-import { Component, OnInit } from '@angular/core';
 import { Injectable } from "@angular/core";
+import { HttpClient, HttpHeaders} from "@angular/common/http"
+import { Observable } from 'rxjs';
+import { productCardComponent } from "./productCard.component";
+import { product } from "./product";
 
 @Injectable()
 export class productCardservice{
+    private apiUrl:string = 'http://localhost:3000/animals'
+    
+    constructor(private http:HttpClient){}
 
-    constructor(){}
-    getProducts(){
-        return ['Vinho Tinto Seco de Mesa ']
-   //   Eu tirei os outros pq deve ser pego de um BD, com query SQL, usando ID btw 
+    getProducts(): Observable<product[]>{
+        return this.http.get<product[]>(this.apiUrl)
     }
 }

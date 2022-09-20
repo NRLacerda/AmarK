@@ -8,12 +8,6 @@
 </head>
 <body class="body">
 <app-nav></app-nav>
-<app-productCard></app-productCard>
-<app-productCard></app-productCard>
-<app-productCard></app-productCard>
-<app-productCard></app-productCard>
-<app-productCard></app-productCard>
-<app-productCard></app-productCard>
-<app-productCard></app-productCard>
+<app-productCard *ngFor="let productCards of productCard"></app-productCard>
 </body>
 </html>
